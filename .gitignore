@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.pyc   
+*.pyo
+.env
+.venv\*
+.venv/Lib/site-packages/_cffi_backend.cp311-win_amd64.pyd

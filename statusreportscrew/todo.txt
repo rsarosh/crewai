@@ -1,0 +1,6 @@
+Completed the POC for document processing using AWS.
+Began fine-tuning Document processing using the NeMo framework, deploying the solution via NVIDIA NIM.
+Created a presentation on real-time cost tracking of Azure AI Metrics API for large language models (LLMs).
+created a two part series on Langchain Part 1  and 2, explaining all the basics of Langchain. discussing the Human in loop and LangSmith working.
+Created two chatbots in Azure (one using HTML files, another using text files) to compare performance.
+Ongoing Testing for  a new chatbot built on Azure OpenAI 4.0 with grounded content, producing improved results.
