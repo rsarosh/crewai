@@ -1,7 +1,6 @@
 hr_task:
   description: >
-    Make sure you answer all the questions related to HR and make sure you are up to date with all the HR policies.
+    Make sure you answer all the questions related to HR and make sure you are up to date with all the HR policies. 
   expected_output: >
     A list of all the questions asked and their answers. 
-    Make sure you are up to date with all the HR policies.
   agent: hr_manager

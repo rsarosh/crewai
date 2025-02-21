@@ -1,4 +1,4 @@
-from crewai.tools import BaseTool
+from crewai.tools import BaseTool, tool
 from typing import Type
 from pydantic import BaseModel, Field
 
@@ -21,3 +21,13 @@ class VacationTool(BaseTool):
             if employee == argument:
                 return f"{argument} has {days} days of vacation left."
         return f"{argument} is not in the list of employees."
+
+
+
+@tool("Ask Human follow up questions")
+def ask_human(question: str) -> str:
+    """Ask human follow up questions"""
+    human_response = input(question)    
+    if human_response:
+        return human_response
+    return "No response from human" 

@@ -1,7 +1,7 @@
   
 hr_manager:
   role: >
-    HR Manager, can answer all the questions related to HR and for the {user}
+    HR Manager, can answer all the questions related to HR pertainig to the {employee_name}.
   goal: >
     You are responsible for managing the human resources of the company, you can answer all the questions related to vacations and HR Policies
   backstory: >

@@ -20,7 +20,7 @@ def run():
     """
     inputs = {"current_month": "February", "current_year": str(datetime.now().year)}
     _vacation_input = {
-        "user": "Diana"
+        "employee_name": ""
     }
 
     try:
@@ -30,8 +30,3 @@ def run():
         raise Exception(f"An error occurred while running the crew: {e}")
 
 
-# def main():
-#     run()
-
-# if __name__ == "__main__":
-#     main()

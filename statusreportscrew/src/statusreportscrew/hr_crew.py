@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from statusreportscrew.tools.vacation_tool import VacationTool
+from statusreportscrew.tools.vacation_tool import VacationTool, ask_human
  
 
 @CrewBase
@@ -17,7 +17,7 @@ class HRCrew:
     def hr_task(self) -> Task:
         return Task(
             config=self.tasks_config["hr_task"],
-            tools=[VacationTool()],
+            tools=[VacationTool(), ask_human],
             verbose=True,
             expected_output=" A string with the number of days of vacation left for the employee.",
             
