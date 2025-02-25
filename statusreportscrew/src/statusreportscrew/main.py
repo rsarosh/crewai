@@ -5,7 +5,9 @@ from datetime import datetime
 from statusreportscrew.crew import Statusreportscrew
 from statusreportscrew.hr_crew import HRCrew
 from statusreportscrew.tools.vacation_tool import VacationTool, VacationToolInput
-
+from crewai.flow.flow import Flow, listen, start
+# from statusreportscrew.my_flow import ExampleFlow
+from statusreportscrew.stock_flow import StockFlow
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
 # This main file is intended to be a way for you to run your
@@ -24,9 +26,11 @@ def run():
     }
 
     try:
-        # Statusreportscrew().crew().kickoff(inputs=inputs)
-        HRCrew().crew().kickoff(inputs = _vacation_input)
+       # Statusreportscrew().crew().kickoff(inputs=inputs)
+       # HRCrew().crew().kickoff(inputs = _vacation_input)
+        stock_flow = StockFlow()
+        stock_flow.kickoff()
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
-
+ 

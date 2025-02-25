@@ -1,4 +1,4 @@
-from crewai import Agent, Crew, Process, Task
+from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import FileReadTool
 
@@ -13,9 +13,10 @@ file_read_tool = FileReadTool(file_path="todo.txt")
 class Statusreportscrew:
     """Statusreportscrew crew"""
 
-    # Learn more about YAML configuration files here:
-    # Agents: https://docs.crewai.com/concepts/agents#yaml-configuration-recommended
-    # Tasks: https://docs.crewai.com/concepts/tasks#yaml-configuration-recommended
+    deepseek_llm = LLM ( 
+        model= "ollama/deepseek-r1:1.5b",
+        base_url ="http://localhost:11434" )
+
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
 
@@ -23,11 +24,11 @@ class Statusreportscrew:
     # https://docs.crewai.com/concepts/agents#agent-tools
     @agent
     def researcher(self) -> Agent:
-        return Agent(config=self.agents_config["researcher"], verbose=True)
+        return Agent(config=self.agents_config["researcher"], llm=self.deepseek_llm,  verbose=True)
 
     @agent
     def reporting_analyst(self) -> Agent:
-        return Agent(config=self.agents_config["reporting_analyst"], verbose=True)
+        return Agent(config=self.agents_config["reporting_analyst"], llm=self.deepseek_llm, verbose=True)
 
     # To learn more about structured task outputs,
     # task dependencies, and task callbacks, check out the documentation:

@@ -32,6 +32,11 @@ crewai install
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
 ```bash
+cd statusreportscrew
+```
+make sure venv is active
+```
+c:\code\crewai\statusreportscrew> .\venv\Scripts\activate
 $ crewai run
 ```
 
@@ -52,3 +57,24 @@ For support, questions, or feedback regarding the Statusreportscrew Crew or crew
 - [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
+
+
+# Running the flow
+
+```
+python c:\Code\CrewAI\statusreportscrew\src\statusreportscrew\main.py
+```
+or
+
+```
+goto PS C:\Code\crewai\statusreportscrew
+.venv\Scripts\activate
+crewai run
+```
+## Flow
+
+get_stock_data
+    | 
+get_stock_news
+    | 
+get_stock_report

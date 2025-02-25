@@ -1,0 +1,40 @@
+
+********** [2025-02-17 14:20:47] AIG meets the Peter Lynch criteria 4/5 ************
+Stock: AIG
+AIG has a trailing PE of 18.27 which is less than 25 
+AIG has a forward PE of 10.62 which is less than 15 
+AIG has a PEG ratio of 1.06 which is less than 1.2 
+AIG has a debt to equity of 2.79 which is greater than 0.35 -- FAIL!
+AIG has a growth rate of 3389.0% which is greater than 15% 
+AIG has a dividend yield of 2.15% and dividend per share: 1.56
+AIG has 4 buy, 10 hold, 0 sell, 5 strong buy, 0 strong sell and target price of 83.79 
+52 week high: 79.52 and 52 week low: 66.63 
+
+Reported EPS,	 Surprise,	 Surprise Percentage	
+1.3,	 0.07,	 5.98% 
+1.23,	 0.13,	 11.82% 
+1.16,	 -0.14,	 -10.77% 
+1.77,	 0.12,	 7.27% 
+1.79,	 0.15,	 9.15% 
+3.82,	 2.32,	 154.67% 
+
+AIG has a RSI of 37.89, no strong momentum
+
+Insider purchases: 0 transactions
+Insider sales: 0 transactions
+Analyst Price Targets: {'current': 74.34, 'low': 75.0, 'high': 96.0, 'mean': 83.79, 'median': 83.0}
+
+EPS trend is down
+Current EPS: current      1.19249
+7daysAgo     1.53719
+30daysAgo    1.53969
+60daysAgo    1.57505
+90daysAgo    1.57566
+Name: 0q, dtype: float64
+
+Gross margin is not available.
+
+Profit margin is -5.15%, lower than 20% indicating a NOT a good business model.
+PE ratio: PE ratio is 31.60. current price 74.34, Basic EPS 2.35
+
+
